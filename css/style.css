@@ -1,0 +1,325 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+header .navbar-brand i {
+    color: #35A22C;
+    font-size: 3rem;
+}
+
+header .navbar {
+    padding-top: 10px;
+}
+
+header .navbar-brand span {
+    font-size: 2rem;
+}
+
+header ul li {
+    margin: 0 10px;
+}
+
+header ul li.active a {
+    color: #35A22C !important;
+}
+
+header ul li::after {
+    content: "";
+    height: 2px;
+    width: 0;
+    display: block;
+    background-color: #35A22C;
+    transition: all 0.5s;
+}
+
+header ul li.active::after {
+    width: 100%;
+}
+
+header ul li:hover::after {
+    width: 100%;
+}
+
+header ul li:hover a {
+    color: #35A22C !important;
+}
+
+
+
+.navbar-dark .navbar-nav .nav-link {
+    color: white;
+}
+
+.navbar-dark .navbar-toggler {
+    background-color: #35A22C;
+}
+
+.carousel-item {
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+
+.carousel-item:nth-child(1) {
+    background-image: url(/images/image-PORTFOLIO/image/finland.jpg);
+}
+
+.carousel-item:nth-child(2) {
+    background-image: url(/images/image-PORTFOLIO/image/mountains.jpg);
+}
+
+.carousel-item:nth-child(3) {
+    background-image: url(/images/image-PORTFOLIO/image/mountains-1.jpg);
+}
+
+.img__thumb {
+    margin: auto;
+    width: 150px;
+}
+
+.img__thumb img {
+    /* width: 150px; */
+    border-radius: 50%;
+}
+
+.carousel-caption {
+    /* phu hop khi di voi position top: 50%;
+    transform: translateY(-50%); can giua theo chieu dung */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-indicators li {
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+}
+
+.carousel-indicators .active {
+    background-color: green;
+}
+
+.carousel-caption h3 {
+    font-size: 3rem;
+}
+
+.carousel-caption p {
+    font-size: 1.5rem;
+}
+
+.overlay {
+    background: rgba(39, 43, 54, .5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#project {
+    padding-top: 5rem;
+    padding-bottom: 4rem;
+}
+
+#project .title p {
+    max-width: 750px;
+}
+
+
+#project .title h1 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+#project .tab-content .card {
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0 0 10px #00000047;
+    transition: 0.5s;
+}
+
+#project .tab-content .card .card-body h4 {
+    font-size: 1.2rem;
+}
+
+#project .tab-content .card:hover {
+    border: 1px solid #37A32E;
+}
+
+#project .tab-content .card:hover .card-body h4 {
+    color: #37A32E;
+}
+
+#project .tab-content .card .card-body p {
+    color: gray;
+}
+
+#project .tab-content .card {
+    cursor: pointer;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    background-color: #35A22C;
+    border: 1px solid #35A22C;
+}
+
+.project__content ul li a {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+#service {
+    background-image: url(/images/image-PORTFOLIO/image/3.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 5.5rem 0;
+    background-attachment: fixed;
+    position: relative;
+}
+
+#service .overlay {
+    background: rgba(7, 10, 12, .72);
+}
+
+#service .title {
+    text-align: center;
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+
+#service .title h1 {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.service__content .card-body {
+    text-align: center;
+}
+
+.service__content .card-body i {
+    font-size: 2.5rem;
+    color: #35A22C;
+    margin-bottom: 1rem;
+}
+
+.service__content .card {
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, .1);
+    backdrop-filter: blur(3px);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, .1);
+    transition: 0.5s;
+}
+
+.service__content .card:hover {
+    background-color: black;
+    border: 1px solid white;
+}
+
+#service .title {
+    position: relative;
+}
+
+#service .card .card-body .card-title {
+    margin: 1rem 0;
+    font-weight: bold;
+    font-size: 20px !important;
+}
+
+#service .card .card-body .card-text {
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+@media screen and (max-width:768px) {
+    .service__content .row .text {
+        padding-bottom: 2rem;
+    }
+}
+
+#edu {
+    position: relative;
+    padding: 70px;
+}
+
+#edu .bg__edu {
+    background-image: url(/images/image-PORTFOLIO/image/memphis_3.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#edu .card {
+    box-shadow: 0 0 30px #4444446e;
+    backdrop-filter: blur(3px);
+    background: rgba(255, 255, 255, .25);
+    border-radius: 10px;
+}
+
+#edu .card .card-body h4 {
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+#edu .card .card-body {
+    padding: 2.5rem;
+}
+
+#edu .card .card-body p {
+    margin: 1rem 0;
+}
+
+#edu .row .text {
+    padding-top: 3rem;
+}
+
+#footer {
+    background-color: #222222;
+    color: #AAAAAA;
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#footer .contact i {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border: 1px solid #454545;
+    border-radius: 50%;
+    margin: 0 0.3rem;
+    transition: 0.5s;
+    color: #AAAAAA;
+}
+
+#footer .contact i:hover {
+    border: 1px solid #35A22C;
+    color: #35A22C;
+}
+
+#footer hr {
+    color: #454545;
+    border: 1px solid;
+    margin: 2rem 0;
+}

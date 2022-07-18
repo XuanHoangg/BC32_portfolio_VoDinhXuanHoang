@@ -70,15 +70,15 @@ header ul li:hover a {
 }
 
 .carousel-item:nth-child(1) {
-    background-image: url(/images/image-PORTFOLIO/image/finland.jpg);
+    background-image: url(./../images/image-PORTFOLIO/image/finland.jpg);
 }
 
 .carousel-item:nth-child(2) {
-    background-image: url(/images/image-PORTFOLIO/image/mountains.jpg);
+    background-image: url(./../images/image-PORTFOLIO/image/mountains.jpg);
 }
 
 .carousel-item:nth-child(3) {
-    background-image: url(/images/image-PORTFOLIO/image/mountains-1.jpg);
+    background-image: url(./../images/image-PORTFOLIO/image/mountains-1.jpg);
 }
 
 .img__thumb {
@@ -181,7 +181,7 @@ header ul li:hover a {
 }
 
 #service {
-    background-image: url(/images/image-PORTFOLIO/image/3.jpg);
+    background-image: url(./../images/image-PORTFOLIO/image/3.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -258,7 +258,7 @@ header ul li:hover a {
 }
 
 #edu .bg__edu {
-    background-image: url(/images/image-PORTFOLIO/image/memphis_3.png);
+    background-image: url(./../images/image-PORTFOLIO/image/memphis_3.png);
     background-position: bottom left;
     background-repeat: no-repeat;
     background-size: 50% auto;
